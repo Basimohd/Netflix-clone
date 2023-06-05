@@ -7,7 +7,9 @@
 {
     height: 742px;
     object-fit: cover;
+
 }
+
 
 .banner-title{
     color: white;
@@ -20,7 +22,7 @@
 .carousel-caption{
     text-align: left;
     margin-bottom: 200px;
-    margin-left: -138px;
+    margin-left: -125px;
 }
 .btn{
     padding-left: 1.4rem;

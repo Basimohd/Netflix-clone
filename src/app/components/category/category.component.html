@@ -1,0 +1,8 @@
+<div class="row mx-2 mb-4">
+    <h5 class="text-white category-title">{{title}}</h5>
+    <div class="rowposter mt-2 py-3">
+        <ng-container *ngFor="let movie of movieData">
+            <img class="rowing largeposter" src="https://image.tmdb.org/t/p/original/{{ movie.poster_path }}" alt="" [routerLink]="['/movie',movie.id]">
+        </ng-container>
+
+    </div>

@@ -1,0 +1,28 @@
+.rowposter{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    max-height: 800px;
+}
+.rowing{
+    max-height: 200px;
+    object-fit: contain;
+    width: 100%;
+    box-sizing: content-box;
+    transition: transform 450ms;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+.rowing:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+}
+.largeposter{
+    max-height: 300px;
+}
+.rowposter::-webkit-scrollbar{
+    display: none;
+}
+.category-title{
+    font-size: 25px;
+}
