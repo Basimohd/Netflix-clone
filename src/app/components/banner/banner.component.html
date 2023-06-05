@@ -1,0 +1,51 @@
+<!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <!--Indicators-->
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item" *ngFor="let b of bannerData;let i=index" [ngClass]="{active:i===1}">
+            <div class="view">
+                <img class="d-block w-100" src="https://image.tmdb.org/t/p/original/{{ b.backdrop_path }}"
+                    alt="First slide">
+                <div class="mask rgba-black-light"></div>
+            </div>
+            <div class="carousel-caption">
+                <h3 class="h3-responsive banner-title">{{b.original_title}}</h3>
+                <p class="banner-description">{{b.overview}}</p>
+                <div class="carousel-btn  mx-12">
+                    <a class="btn btn-light ">
+                        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="play-button_svg__Hawkins-Icon play-button_svg__Hawkins-Icon-Standard">
+                            <path
+                                d="M4 2.691a1 1 0 011.482-.876l16.925 9.309a1 1 0 010 1.752L5.482 22.185A1 1 0 014 21.309V2.69z"
+                                fill="currentColor"></path>
+                        </svg>
+                        <span class="ms-2">Play</span></a>
+                    <a class="btn btn-secondary ">
+                        <svg width="24" height="24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="more-info_svg__Hawkins-Icon more-info_svg__Hawkins-Icon-Standard">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 3a9 9 0 100 18 9 9 0 000-18zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12zm12-2v8h-2v-8h2zm-1-1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                                fill="currentColor"></path>
+                        </svg>
+                        <span class="ms-2">More Info</span></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+    <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->

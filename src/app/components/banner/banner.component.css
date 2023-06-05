@@ -1,0 +1,39 @@
+.carousel-inner
+{
+    height: 742px;
+}
+
+.carousel-inner .carousel-item img
+{
+    height: 742px;
+    object-fit: cover;
+}
+
+.banner-title{
+    color: white;
+    font-weight: bold;
+    font-size: 53px;
+}
+.banner-description{
+    color: #ffffff;
+}
+.carousel-caption{
+    text-align: left;
+    margin-bottom: 200px;
+    margin-left: -138px;
+}
+.btn{
+    padding-left: 1.4rem;
+    padding-right: 1.8rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.8rem;
+    font-size: 18px;
+    margin-right: 15px;
+}
+.carousel-control-prev{
+    margin-left: -66px;
+    opacity: 20%;
+}
+.carousel-control-next{
+    opacity: 20%;
+}

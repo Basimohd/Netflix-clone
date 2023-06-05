@@ -1,0 +1,19 @@
+.navbar-brand {
+    margin: 15px 15px 5px 35px;
+}
+
+.navbar {
+    background-color: 'transparent';
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.752) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+}
+
+.navbar-nav li a {
+    color: rgb(212, 212, 212);
+    font-weight: bold;
+}
+.navbar-nav{
+    margin: 6px 35px 5px 6px;
+}
