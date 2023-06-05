@@ -14,7 +14,7 @@
                 <h3 class="h3-responsive banner-title">{{b.original_title}}</h3>
                 <p class="banner-description">{{b.overview}}</p>
                 <div class="carousel-btn  mx-12">
-                    <a class="btn btn-light ">
+                    <a class="btn btn-light" (click)="onClickPlay(b.id)">
                         <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"
                             class="play-button_svg__Hawkins-Icon play-button_svg__Hawkins-Icon-Standard">
                             <path
@@ -22,7 +22,7 @@
                                 fill="currentColor"></path>
                         </svg>
                         <span class="ms-2">Play</span></a>
-                    <a class="btn btn-secondary ">
+                    <a class="btn btn-secondary " [routerLink]="['/movie',b.id]">
                         <svg width="24" height="24" fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                             class="more-info_svg__Hawkins-Icon more-info_svg__Hawkins-Icon-Standard">
